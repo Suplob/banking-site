@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking calculation</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container mx-auto">
+      <section class="grid grid-cols-3 gap-3 mt-28 w-2/3 mx-auto">
+        <div class="bg-blue-300 px-20 py-10 rounded">
+          <h2 class="text-2xl font-semibold text-white">Deposit</h2>
+          <p class="font-medium text-5xl text-white">
+            $<span id="total-deposit">00</span>
+          </p>
+        </div>
+        <div class="bg-yellow-300 px-20 py-10 rounded">
+          <h2 class="text-2xl font-semibold text-white">Withdraw</h2>
+          <p class="font-medium text-5xl text-white">
+            $<span id="total-withdraw">00</span>
+          </p>
+        </div>
+        <div class="bg-green-300 px-20 py-10 rounded">
+          <h2 class="text-2xl font-semibold text-white">Current Balance</h2>
+          <p class="font-medium text-5xl text-white">
+            $<span id="current-balance">1000</span>
+          </p>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 gap-3 mt-3 w-2/3 mx-auto">
+        <div class="bg-red-300 px-20 py-10 rounded">
+          <p class="text-white text-4xl font-semibold">Deposit</p>
+          <input
+            type="text"
+            class="mt-2 w-56 rounded"
+            placeholder="$ deposit your money here"
+            id="deposit-input"
+          />
+          <button
+            class="bg-blue-500 text-white font-medium px-3 py-1 rounded mt-2"
+            id="deposit-btn"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="bg-blue-100 px-20 py-10 rounded">
+          <p class="text-white text-4xl font-semibold">Withdraw</p>
+          <input
+            type="text"
+            class="mt-2 w-56 rounded"
+            placeholder="$ Withdraw your money here"
+            id="withdraw-input"
+          />
+          <button
+            class="bg-blue-500 text-white font-medium px-3 py-1 rounded mt-2"
+            id="widthdraw-btn"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center mt-40">
+      <small>&copy; Suplob Roy || 2021</small>
+    </footer>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
